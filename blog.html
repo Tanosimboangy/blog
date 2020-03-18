@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>
-    Blog
+      Blog
     </title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+      body {
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(0,0,0,.2);
+  }
+      header {
+          background-color: purple;
+          color: #fff;
+          border-radius: .25rem;
+          font-weight: 800;
+          text-decoration: none;
+          transform: scale(1);
+          transition: transform .1s ease-out;
+      }
+      main {
+    background-color: floralwhite;
+    color: aquamarine;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  footer a {
+    display: inline-flexbox;
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: peru;
+    border-radius: .25rem;
+    font-weight: 800;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform .1s ease-out;
+  }
+  </style>
   </head>
   <body>
     <header>
@@ -15,17 +57,40 @@
     </header>
     <main>
       <nav>
-        <ul>
-          <li><a href="my-first-blog.html">My first time of writing a blog</a></li>
-          <li><a href="My_study_at_onja.html">My study at onja</a></li>
-          <li><a href="my-family.html">My family</a></li>
-        </ul>
-      </nav>
+        <h2>
+          <a href="my-first-blog.html">
+              MY FIRST BLOG
+          </a>
+      </h2>
+        <h2>
+            <a href="my-family.html">
+                MY FAMILY
+            </a>
+        </h2>
+        <h2>
+            <a href="my_study_at_onja.html">
+                MY STUDY AT ONJA
+            </a>
+        </h2>
+        <h2>
+          <a href="my-diary.html">
+              MY DIARY
+          </a>
+        </h2>
+        <h2>
+          <a href="my-second-year.html">
+              MY SECOND YEAR 
+          </a>
+        </h2>
+    </nav>
     </main>
     <footer>
-        <h3>
-            <a href="index.html">Go back to index→</a>
-          </h3>
+      <h3>
+        <a href="blog.html">Go back to blog→</a>
+      </h3>
+      <h3>
+        <a href="index.html">Go back to index→</a>
+      </h3>
     </footer>
   </body>
 </html>
