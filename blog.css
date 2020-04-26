@@ -1,34 +1,38 @@
+:root {
+	--value: 2rem;
+	--second: 1s;
+	--percent: 1%;
+}
+
 body {
 	background-image: url(../blog/paradise-1110498_960_720.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 40rem;
+	background-size: calc(var(--percent) * 100) calc(var(--value) * 20);
 }
 
 h1 {
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 4rem;
+	font-size: calc(var(--value) * 2);
 	color: rgb(196, 196, 196);
 	text-align: center;
-	margin: 0 0 1rem 0;
+	margin:  calc(var(--value) * 0)  calc(var(--value) * 0) calc(var(--value) / 2)  calc(var(--value) * 0);
 }
 
 li {
 	text-align: left;
 	display: inline-block;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size:  calc(var(--value) / 1.6);
 	font-style: italic;
-	padding: 1rem;
+	padding:  calc(var(--value) / 2);
 }
 
 li:hover {
-	text-align: left;
-	display: inline-block;
 	background-color: tomato;
-	border-radius: 50% 50%;
-	text-decoration: none;
-	transition: 1s;
-	padding: 2rem;
+	border-radius: calc(var(--percent) * 50) calc(var(--percent) * 50);
+	transition-duration:  calc(var(--second) * 1);
+	text-transform: uppercase;
+	padding:  calc(var(--value) * 1);
 }
 
 a {
@@ -36,23 +40,28 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: rgb(0, 102, 9);
+}
 
 footer a {
-	font-size: 1.2rem;
-	color: rgb(78, 0, 0);
-	padding: .4rem .4rem;
-	border-radius: .8rem;
+	font-size:  calc(var(--value) * 1.2);
+	color: rgb(0, 25, 248);
+	padding:  calc(var(--value) / 5)  calc(var(--value) / 5);
+	border-radius:  calc(var(--value) / 2.5);
 	text-decoration: none;
-	transition: 1s;
-	background-color: rgb(255, 255, 255);
+	transition-duration: calc(var(--second) * 2);
+	position: absolute;
+	top: calc(var(--percent) * 85);
+	left: calc(var(--percent) * 75);
 }
 
 footer a:hover {
-	font-size: 1.5rem;
-	color: rgb(0, 17, 116);
-	padding: 1rem 1rem;
+	font-size:  calc(var(--value) * .8);
+	color: rgb(0, 0, 0);
+	padding:  calc(var(--value) / 2)  calc(var(--value) / 2);
 	background-color: rgb(255, 96, 4);
-	border-radius: 1rem;
-	text-decoration: none;
-	transition: 1s;
+	border-radius:  calc(var(--value) / 2);
+	text-transform: uppercase;
+	transition: calc(var(--second) * 1);
 }
